@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todo App</title>
+  <link rel="stylesheet" href="css/todo.css"/>
+</head>
+<body>
+  <main>
+    <section class="todo-section">
+      <header>
+        <h1>Todo List</h1>
+      </header>
+
+      <form id="todo-form">
+        <input type="text" id="task-input" placeholder="Task..." required />
+        <input type="date" id="task-date" />
+        <select id="task-priority">
+          <option value="Low">Low</option>
+          <option value="Medium" selected>Medium</option>
+          <option value="High">High</option>
+        </select>
+        <button type="submit">Add</button>
+      </form>
+
+      <div id="filters">
+        <button onclick="setFilter('all')">All</button>
+        <button onclick="setFilter('pending')">Pending</button>
+        <button onclick="setFilter('completed')">Completed</button>
+      </div>
+
+      <ul id="task-list"></ul>
+    </section>
+  </main>
+  <script src="js/todo.js"></script>
+</body>
+</html>

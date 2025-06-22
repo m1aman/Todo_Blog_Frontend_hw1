@@ -1,0 +1,37 @@
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="date"], select {
+  flex: 1;
+  padding: 10px;
+}
+
+#filters {
+  margin-top: 10px;
+}
+
+#filters button {
+  margin-right: 5px;
+  padding: 6px 10px;
+  border: none;
+  background: #6c757d;
+  color: white;
+  cursor: pointer;
+}
+
+#filters button:hover {
+  background: #5a6268;
+}
+
+li {
+  background: #eee;
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}

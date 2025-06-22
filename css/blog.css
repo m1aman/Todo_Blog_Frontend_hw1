@@ -1,0 +1,90 @@
+/* css/styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f4f8;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #3b5998;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #3b5998;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2d4373;
+}
+
+.blog-post {
+  background: #fdfdfd;
+  border-left: 5px solid #3b5998;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.blog-post h2 {
+  color: #444;
+  margin-top: 0;
+}
+
+.blog-post pre {
+  background: #f4f4f4;
+  padding: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border-radius: 4px;
+}
+
+textarea::placeholder {
+  color: #999;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
