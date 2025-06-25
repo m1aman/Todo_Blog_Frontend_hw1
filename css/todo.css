@@ -1,32 +1,44 @@
+/* Layout for form */
 form {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 10px;
+  justify-content: center;
 }
 
+/* Inputs grow/shrink flexibly */
 input[type="text"], input[type="date"], select {
-  flex: 1;
+  flex: 1 1 150px;
   padding: 10px;
+  min-width: 150px;
 }
 
+/* Filters section */
 #filters {
   margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
 #filters button {
-  margin-right: 5px;
-  padding: 6px 10px;
+  padding: 6px 12px;
   border: none;
   background: #6c757d;
   color: white;
   cursor: pointer;
+  flex: 1 1 100px;
+  text-align: center;
+  border-radius: 5px;
 }
 
 #filters button:hover {
   background: #5a6268;
 }
 
+/* Task item list */
 li {
   background: #eee;
   margin-top: 10px;
@@ -34,4 +46,15 @@ li {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  gap: 8px;
+}
+
+/* Ensure main content centers and adapts */
+.todo-section {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

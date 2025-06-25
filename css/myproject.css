@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  min-height: 100vh;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 600px;
+}
+
+a {
+  flex: 1 1 150px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px;
+  background: #e0f0ff;
+  color: #007BFF;
+  border-radius: 8px;
+  text-align: center;
+}

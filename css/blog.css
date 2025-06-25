@@ -1,4 +1,3 @@
-/* css/styles.css */
 body {
   font-family: Arial, sans-serif;
   background-color: #f2f4f8;
@@ -14,6 +13,9 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 h1 {
@@ -22,12 +24,12 @@ h1 {
 }
 
 form {
-  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 label {
-  display: block;
-  margin-top: 15px;
   font-weight: bold;
 }
 
@@ -36,37 +38,34 @@ input[type="password"],
 textarea {
   width: 100%;
   padding: 10px;
-  margin-top: 5px;
   border-radius: 6px;
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
 
 button {
-  margin-top: 15px;
   padding: 10px 20px;
   background-color: #3b5998;
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  width: fit-content;
 }
 
 button:hover {
   background-color: #2d4373;
 }
 
+/* Blog post layout */
 .blog-post {
   background: #fdfdfd;
   border-left: 5px solid #3b5998;
-  margin-bottom: 20px;
   padding: 15px;
   border-radius: 6px;
-}
-
-.blog-post h2 {
-  color: #444;
-  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .blog-post pre {
@@ -81,6 +80,14 @@ textarea::placeholder {
   color: #999;
 }
 
+/* Likes/Comments Row */
+.blog-post > div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Comments List */
 ul {
   padding-left: 20px;
 }
